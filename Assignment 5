@@ -1,0 +1,30 @@
+<div class="menu">
+  <a href="#" onclick="loadRandomCategory();">Menu</a>
+  <a href="#" onclick="loadSpecials();">Specials</a>
+  <a href="#" onclick="loadMap();">Map</a>
+</div>
+
+<script>
+function loadRandomCategory() {
+  var categories = ["Lunch", "Dinner", "Sushi", "Breakfast", "Desserts"];
+  var randomIndex = Math.floor(Math.random() * categories.length);
+  var randomCategoryShortName = categories[randomIndex];
+  loadMenuItems(randomCategoryShortName);
+}
+
+function loadSpecials() {
+  // Load the menu items for the "Specials" category
+  loadMenuItems("Specials");
+}
+
+function loadMap() {
+  // Load the map page
+  // Implement the functionality to load the map page
+}
+
+function loadMenuItems(categoryShortName) {
+  // Implement the functionality to load the menu items for the specified category
+  // You can use AJAX or fetch to retrieve the menu items from the server
+  // Update the DOM to display the menu items on the page
+}
+</script>
